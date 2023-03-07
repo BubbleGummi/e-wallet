@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "cardNumber": "1234567891011123",
+    "cardHolderName": "OSCAR MATTSSON",
+    "valid": "12/23",
+    "ccv": "",
+    "color": "linear-gradient(248.04deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 99.07%), #FFAE34",
+    "logo": "../../src/assets/vendor-bitcoin.svg",
+    "chip": "../../src/assets/chip-dark.svg",
+    "vendor": "Bitcoin inc"
+  },
+  {
+    "id": 2,
+    "cardNumber": "7777777777777777",
+    "cardHolderName": "OSCAR MATTSSON",
+    "valid": "11/23",
+    "ccv": "",
+    "color": "linear-gradient(248.3deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%), #222222",
+    "logo": "../../src/assets/vendor-ninja.svg",
+    "chip": "../../src/assets/chip-light.svg",
+    "vendor": "Ninja bank"
+  },
+  {
+    "id": 3,
+    "cardNumber": "5555555555555555",
+    "cardHolderName": "OSCAR MATTSSON",
+    "valid": "09/23",
+    "ccv": "",
+    "color": "linear-gradient(248.52deg, rgba(0, 0, 0, 0.15) 1.49%, rgba(0, 0, 0, 0) 100%), #8B58F9",
+    "logo": "../../src/assets/vendor-blockchain.svg",
+    "chip": "../../src/assets/chip-light.svg",
+    "vendor": "Block chain inc"
+  },
+  {
+    "id": 4,
+    "cardNumber": "6666666666666666",
+    "cardHolderName": "OSCAR MATTSSON",
+    "valid": "10/23",
+    "ccv": "",
+    "color": "linear-gradient(248.3deg, rgba(0, 0, 0, 0.16) 0%, rgba(0, 0, 0, 0) 100%), #F33355",
+    "logo": "../../src/assets/vendor-evil.svg",
+    "chip": "../../src/assets/chip-light.svg",
+    "vendor": "Evil corp"
+  },
+  {
+    "id": 5,
+    "cardNumber": "XXXXXXXXXXXXXXXX",
+    "cardHolderName": "FIRSTNAME LASTNAME",
+    "valid": "MM/YY",
+    "ccv": "",
+    "color": "linear-gradient(248.3deg, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0) 100%), #D0D0D0",
+    "logo": "../../src/assets/vendor-bitcoin.svg",
+    "chip": "../../src/assets/chip-dark.svg",
+    "vendor": ""
+  }
+]

@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+.home {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.home-btn {
+  width: 100%;
+  height: 60px;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  color: black;
+  font-style: normal;
+  font-weight: 700;
+  font-family: "PT Mono";
+  font-size: 22px;
+  line-height: 25px;
+  background-color: #ffff;
+  cursor: pointer;
+}
+
+.remove-btn {
+  height: 30px;
+  width: 100%;
+  font-style: normal;
+  font-weight: 700;
+  font-family: "PT Mono";
+  color: #000000;
+  background-color: #ffff;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    width: 400px;
+    margin: auto;
+    background-color: rgb(178, 178, 181);
+  }
+  .home {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .addCard {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 5px;
+  }
+}
