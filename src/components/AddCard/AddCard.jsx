@@ -1,14 +1,13 @@
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import Top from "../Top/Top";
 import Card from "../Card/Card";
 import "./AddCard.css";
 import CreditCardsData from "../../assets/creditcards.json";
-import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
 
 export default function AddCard() {
   const navigate = useNavigate();
   const cardData = CreditCardsData[4];
-  const [setAddedCardsArray] = useState([]);
   const [addedCard, setAddedCard] = useState({
     id: "",
     cardNumber: "",
@@ -20,27 +19,34 @@ export default function AddCard() {
   function handleClick() {
     const matchingCardData = CreditCardsData.find(
       (card) => card.vendor.toLowerCase() === addedCard.vendor.toLowerCase()
-    )
-
-    if (matchingCardData.length > 0) {
+    );
+    //checks if all the fields are filled 
+    if(
+      addedCard.cardNumber === "" || 
+      addedCard.cardHolderName === "" ||
+      addedCard.valid === "" ||
+      addedCard.ccv === "" 
+    ) {
+      alert("Please fill in all fields.");
+      return;
+    }
       const newCard = {
         ...addedCard,
-        id: matchingCardData[0].id,
-        color: matchingCardData[0].color,
-        logo: matchingCardData[0].logo,
-        chip: matchingCardData[0].chip,
-        vendor: matchingCardData[0].vendor,
+        id: matchingCardData.id,
+        color: matchingCardData.color,
+        logo: matchingCardData.logo,
+        chip: matchingCardData.chip,
+        vendor: matchingCardData.vendor,
       };
-
+    
       setAddedCard(newCard);
       const storedCards = localStorage.getItem("addedCards");
       const updatedCards = storedCards
         ? [...JSON.parse(storedCards), newCard]
         : [newCard];
       localStorage.setItem("addedCards", JSON.stringify(updatedCards));
-      setAddedCardsArray(updatedCards);
+      setAddedCard(updatedCards);
     }
-  }
 
   useEffect(() => {
     if (addedCard.id !== "") {
@@ -75,7 +81,6 @@ export default function AddCard() {
       <Top
         title="ADD A NEW BANK CARD"
         description="NEW CARD"
-        style={{ color: "red" }}
       />
       <Card cardData={cardData} />
       <form className="input-container">
@@ -135,7 +140,7 @@ export default function AddCard() {
             className="input-short"
             placeholder="CCV"
             type="number"
-            max={3}
+            max={999}
             required
             value={addedCard.ccv}
             style={{ width: "100%" }}
@@ -170,3 +175,4 @@ export default function AddCard() {
     </div>
   );
 }
+
