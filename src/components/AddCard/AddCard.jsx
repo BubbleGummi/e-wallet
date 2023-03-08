@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Top from "../Top/Top";
 import Card from "../Card/Card";
-import "./AddCard.css";
+import "./AddCard.scss";
 import CreditCardsData from "../../assets/creditcards.json";
 
 export default function AddCard() {
