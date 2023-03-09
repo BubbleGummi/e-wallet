@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-height: 15.0625rem;
+  width: 100%;
+  box-shadow: 0rem 0rem 0.5rem rgba(0, 0, 0, 0.25);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  cursor: pointer;
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem;
+    width: 100%;
+    margin-bottom: 5.625rem;
+
+    .chip {
+      position: absolute;
+      width: 3.125rem;
+      left: 1.25rem;
+      top: 1.25rem;
+    }
+
+    .card-logo {
+      position: absolute;
+      right: 1.5625rem;
+      top: 1.375rem;
+    }
+  }
+
+  .card-numbers {
+    font-family: "PT Mono";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6563rem;
+    line-height: 2rem;
+    display: flex;
+    justify-content: space-around;
+    letter-spacing: 0.17em;
+    margin-bottom: 0;
+  }
+}
+
+
+
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 12.5rem;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  text-align: start;
+  padding: 1.125rem;
+
+  .container-name {
+    padding: 0.1875rem;
+    text-align: start;
+  }
+}
+
+.container-number {
+  padding: 0.1875rem;
+  text-align: end;
+}
+
+.card-informtion {
+  font-family: "PT Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 0.8125rem;
+  color: white;
+  padding: 0;
+
+  .card-information-second {
+    font-family: "PT Mono";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.25rem;
+    background: rgba(255, 255, 255, 1);
+  }
+}
