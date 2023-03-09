@@ -1,4 +1,4 @@
-import "./Card.css";
+import "./Card.scss";
 
 function formatCardNumber(cardNumber) {
   return (
