@@ -84,7 +84,7 @@ export default function AddCard() {
         <label>CARD NUMBER</label>
           <input className="input-long" placeholder="XXXX XXXX XXXX XXXX" type="number"
             maxLength={16} required 
-            value={addedCard.cardNumber}
+            value={addedCard.cardNumber || ''}
             onKeyDown={handleKeyDown} onChange={(event) => {
               setAddedCard({ ...addedCard, cardNumber: event.target.value });
             }}
@@ -93,7 +93,7 @@ export default function AddCard() {
           <input
             className="input-long" placeholder="FIRSTNAME LASTNAME" type="text"
             required 
-            value={addedCard.cardHolderName} onChange={(event) => {
+            value={addedCard.cardHolderName || ''} onChange={(event) => {
               setAddedCard({
                 ...addedCard,
                 cardHolderName: event.target.value.toUpperCase(),
@@ -107,7 +107,7 @@ export default function AddCard() {
           <label>VALID THRU</label>
           <input className="input-short" type="text" placeholder="MM/YY"
             required
-            value={addedCard.valid}
+            value={addedCard.valid || ''}
             style={{ width: "80%" }}
             onChange={(event) => {
               const input = event.target.value.replace(/[^0-9]/g, "").slice(0, 4);
@@ -122,7 +122,7 @@ export default function AddCard() {
           <label>CCV</label>
             <input className="input-short" placeholder="CCV" type="number" max={999}
               required
-              value={addedCard.ccv} style={{ width: "100%" }} onKeyDown={handleKeyDownCcv} onChange={(event) => {
+              value={addedCard.ccv || ''} style={{ width: "100%" }} onKeyDown={handleKeyDownCcv} onChange={(event) => {
                 setAddedCard({ ...addedCard, ccv: event.target.value });
               }}
             />
@@ -134,7 +134,7 @@ export default function AddCard() {
           <select
             className="input-long"
             required
-            value={addedCard.vendor} onChange={(event) => {
+            value={addedCard.vendor || ''} onChange={(event) => {
               const value = event.target.value;
               setAddedCard(prevState => ({ ...prevState, vendor: value }));
             }}
