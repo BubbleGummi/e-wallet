@@ -1,31 +1,31 @@
 import "./Card.css";
 
-export default function Card({ cardData, onClick }) {
-  const format = (cardNumber) => {
-    return (
-      cardNumber.substring(0, 4) +
-      " " +
-      cardNumber.substring(4, 8) +
-      " " +
-      cardNumber.substring(8, 12) +
-      " " +
-      cardNumber.substring(12, 16)
-    );
-  };
+function formatCardNumber(cardNumber) {
+  return (
+    cardNumber.substring(0, 4) +
+    " " +
+    cardNumber.substring(4, 8) +
+    " " +
+    cardNumber.substring(8, 12) +
+    " " +
+    cardNumber.substring(12, 16)
+  );
+}
 
+function Card({ cardData, onClick }) {
   return (
     <>
       {cardData && (
         <div
           className="card"
           onClick={onClick}
-          style={{ background: `${cardData.color}` }}
+          style={{ background: cardData.color }}
         >
           <div className="card-header">
             <img className="chip" src={cardData.chip} alt="chip" />
             <img className="card-logo" src={cardData.logo} alt="card-logo" />
           </div>
-          <p className="card-numbers">{format(cardData.cardNumber)}</p>
+          <p className="card-numbers">{formatCardNumber(cardData.cardNumber)}</p>
           <div className="-card-wrapper">
             <div className="card-container">
               <div className="container-name">
@@ -45,3 +45,5 @@ export default function Card({ cardData, onClick }) {
     </>
   );
 }
+
+export default Card;
