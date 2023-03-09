@@ -9,6 +9,12 @@
   gap: 20px;
 }
 
+.addCard {
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 5px;
+}
+
 .home-btn {
   width: 100%;
   height: 60px;
@@ -43,14 +49,12 @@
     margin: auto;
     background-color: rgb(178, 178, 181);
   }
+
   .home {
     background-color: rgb(255, 255, 255);
     padding: 10px;
     border-radius: 5px;
-  }
-  .addCard {
-    background-color: rgb(255, 255, 255);
-    padding: 10px;
-    border-radius: 5px;
+
+
   }
 }

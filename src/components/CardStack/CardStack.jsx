@@ -1,4 +1,4 @@
-import "./CardStack.css";
+import "./CardStack.scss";
 import Card from "../Card/Card";
 import CreditCards from "../../assets/creditcards.json";
 
@@ -16,9 +16,9 @@ export default function CardStack({ activeCard, setActiveCard }) {
 
   return (
     <div className="cardStack">
-      <div className="cardStack-container" style={{ color: "#FFFFFF" }}>
+      <div className="cardStack-container">
         {nonActiveCardsWithStoredCards.map((card, key) => (
-          <Card key={key} cardData={card} onClick={() => setActiveCard(card)} />
+          <Card key={key} cardData={card} onClick={() => setActiveCard(card)}/>
         ))}
       </div>
     </div>

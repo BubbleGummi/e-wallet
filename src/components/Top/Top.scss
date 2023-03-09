@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+.top {
+  padding: 10px 40px 0;
+  
+  .top-header {
+    font-family: "PT Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 100%;
+    color: #222222;
+    letter-spacing: initial;
+  }
+
+  .top-header-text {
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgba(34, 34, 34, 0.6);
+    margin-bottom: 0;
+  }
+}

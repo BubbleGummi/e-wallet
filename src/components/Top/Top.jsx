@@ -1,4 +1,4 @@
-import "./Top.css";
+import "./Top.scss";
 
 export default function Top(props) {
   return (

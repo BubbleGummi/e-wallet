@@ -1,4 +1,4 @@
-import "./Home.css";
+import "./Home.scss";
 import Top from "../Top/Top";
 import Card from "../Card/Card";
 import CardStack from "../CardStack/CardStack";

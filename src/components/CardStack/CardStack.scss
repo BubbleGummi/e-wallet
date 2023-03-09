@@ -1,0 +1,21 @@
+.cardStack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+
+    > *:not(:last-child) {
+      margin-bottom: -197px;
+    }
+  }
+
+  &-card {
+    position: relative;
+  }
+}

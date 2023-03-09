@@ -5,69 +5,65 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-height: 15.0625rem;
+  max-height: 241px;
   width: 100%;
-  box-shadow: 0rem 0rem 0.5rem rgba(0, 0, 0, 0.25);
-  border-radius: 0.5rem;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
   overflow: hidden;
   cursor: pointer;
-
-  .card-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 0.75rem;
-    width: 100%;
-    margin-bottom: 5.625rem;
-
-    .chip {
-      position: absolute;
-      width: 3.125rem;
-      left: 1.25rem;
-      top: 1.25rem;
-    }
-
-    .card-logo {
-      position: absolute;
-      right: 1.5625rem;
-      top: 1.375rem;
-    }
-  }
-
-  .card-numbers {
-    font-family: "PT Mono";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.6563rem;
-    line-height: 2rem;
-    display: flex;
-    justify-content: space-around;
-    letter-spacing: 0.17em;
-    margin-bottom: 0;
-  }
 }
 
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  width: 100%;
+  margin-bottom: 90px;
+}
 
+.chip {
+  position: absolute;
+  width: 50px;
+  left: 20px;
+  top: 20px;
+}
+
+.card-logo {
+  position: absolute;
+  right: 25px;
+  top: 22px;
+}
+
+.card-numbers {
+  font-family: "PT Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26.5px;
+  line-height: 32px;
+  letter-spacing: 0.03em;
+  margin-bottom: 0;
+}
 
 .card-wrapper {
   display: flex;
   justify-content: center;
-  height: 12.5rem;
+  height: 200px;
 }
 
 .card-container {
   display: flex;
   justify-content: space-between;
   text-align: start;
-  padding: 1.125rem;
+  padding: 18px;
+}
 
-  .container-name {
-    padding: 0.1875rem;
-    text-align: start;
-  }
+.container-name {
+  padding: 3px;
+  text-align: start;
 }
 
 .container-number {
-  padding: 0.1875rem;
+  padding: 3px;
   text-align: end;
 }
 
@@ -75,17 +71,18 @@
   font-family: "PT Mono";
   font-style: normal;
   font-weight: 400;
-  font-size: 0.75rem;
-  line-height: 0.8125rem;
-  color: white;
+  font-size: 12px;
+  line-height: 13px;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: -0.5px -0.5px 0px rgba(255, 255, 255, 0.25),
+    0.5px 0.5px 0px rgba(255, 255, 255, 0.5);
   padding: 0;
+}
 
-  .card-information-second {
-    font-family: "PT Mono";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.125rem;
-    line-height: 1.25rem;
-    background: rgba(255, 255, 255, 1);
-  }
+.card-information-second {
+  font-family: "PT Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
 }
