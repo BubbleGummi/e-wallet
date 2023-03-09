@@ -1,72 +1,71 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 
 label {
-  font-family: "PT Mono";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 13px;
-  text-align: start;
-  margin-top: 10px;
+    font-family: "PT Mono";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75rem;
+    text-align: start;
+    margin-top: 0.625rem;
 
+    &.addCard {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1.25rem;
+    }
+}
 
-  &.addCard {
+.addCard-btn {
     width: 100%;
-    height: 100%;
+    height: 3.75rem;
+    border-radius: 0.3125rem;
+    border: 0.0625rem solid #000000;
+    color: black;
+    font-style: normal;
+    font-weight: 700;
+    font-family: "PT Mono";
+    font-size: 1.375rem;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    margin-top: 1.25rem;
+}
+
+.input-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 20px;
-  }
-}
-.addCard-btn {
-  width: 100%;
-  height: 60px;
-  border-radius: 5px;
-  border: 1px solid #000000;
-  color: black;
-  font-style: normal;
-  font-weight: 700;
-  font-family: "PT Mono";
-  font-size: 22px;
-  line-height: 25px;
-  background-color: black;
-  color: white;
-  cursor: pointer;
-  margin-top: 20px;
-}
-.input-container {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  width: 100%;
-  margin-top: 20px;
-}
+    gap: 0.3125rem;
+    width: 100%;
+    margin-top: 1.25rem;
 
-.input-container-second {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  text-align: start;
-}
+    &-second {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        text-align: start;
+    }
 
-.input-container-third {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+    &-third {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
 }
 
 .input-long {
-  height: 56px;
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  border-radius: 8px;
+    height: 3.5rem;
+    border: 0.0625rem solid rgba(0, 0, 0, 0.8);
+    border-radius: 0.5rem;
 }
 
 .input-short {
-  height: 56px;
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  border-radius: 8px;
-  margin-top: 4px;
-  padding: 0;
-  margin: 0;
+    height: 3.5rem;
+    border: 0.0625rem solid rgba(0, 0, 0, 0.8);
+    border-radius: 0.5rem;
+    margin-top: 0.25rem;
+    padding: 0;
+    margin: 0;
 }
